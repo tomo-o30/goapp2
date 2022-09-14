@@ -7,8 +7,7 @@ import (
 
 type HelloHandler struct{}
 
-func (h HelloHandler)
-ServeHTTP(w http.ResponseWriter, r *http.Request) {
+func (h HelloHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "Hellooo!")
 }
 
